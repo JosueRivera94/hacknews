@@ -4,6 +4,8 @@ import {NewsFaves} from './NewsFaves'
 export const Options = () => {
   return (
     <>
+
+     {/*Buttons to select all the news o the faves */}
       <div className="options-container">
         <div className="options-box">
 

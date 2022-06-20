@@ -13,6 +13,7 @@ export const News = () => {
         setCurrentPage(event.selected)
     }
 
+    //function to add selected filter to local storage
     const filtering=(e)=>{
       const filter =e.target.value
       localStorage.setItem('filter', JSON.stringify(filter))
@@ -43,6 +44,7 @@ export const News = () => {
   return (
     <>
 
+    {/*Show the dropdown for select the flter options */}
     <div >
         <select className='dropdown'  onChange={filtering}>
           <option>Select your news</option>
@@ -53,7 +55,7 @@ export const News = () => {
     </div>
 
 
-
+       {/*Section that shows the news */}
       <section className="container">
         <article className="cards">
 
@@ -77,6 +79,8 @@ export const News = () => {
           )}
         </article>
       </section>
+
+       {/*Pagination */}
       <ReactPaginate
         nextLabel=">"
         previousLabel="<"
