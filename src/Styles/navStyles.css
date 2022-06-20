@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.nav{
+    background: linear-gradient(to bottom, #ececec , #fff );
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7.125em;
+    box-shadow: 0 2px 4px 0 rgba(0,21,41,0.12);
+}
+
+.site-title{
+    padding-left: 9.375rem;
+    font-family: Baskerville;
+    line-height: 1.75em;
+    font-size: 1.75em;
+    width: auto;
+    height: 1.75em;
+    color: #3b3b3b;
+ 
+}
+
+.nav a {
+    color:inherit;
+    text-decoration: none;
+}
+

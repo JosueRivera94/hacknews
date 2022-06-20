@@ -1,0 +1,46 @@
+.options-container .options-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.options-container .options-box .all-container{
+   border: solid 1px #1797ff;
+
+    width: 6.125em;
+    height: 1.9375em;
+    margin-top: 4.375em;
+    margin-left: 38.875em;
+    text-align: center;
+    border-radius: 2px;
+    
+    
+}
+
+.all{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.75em;
+    color: #1797ff;
+
+}
+
+.options-container .options-box .faves-container{
+    border: solid 1px #d6d6d6;
+
+    width: 6.125em;
+    height: 1.9375em;
+    margin-top: 4.375em;
+    border-radius: 2px;
+    text-align: center;
+    
+    
+}
+
+.faves{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.75em;
+    color: #606060;
+
+}
+

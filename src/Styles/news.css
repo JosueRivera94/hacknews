@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    width: 30em;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 1.625em;
+    float: left;
+}
+
+#link{
+    text-decoration: none;
+}
+
+.container{
+    height: 28.125em;
+    margin-left: 9.375em;
+    margin-right: 9.375em;
+    margin-bottom: 6em;
+    margin-top: 2.3125em;
+}
+
+.container .cards div {
+    background-color: #fff;
+    border: solid 1px #979797;
+    border-radius: 6px;
+    width: 34.375em;
+    height: 5.625em;
+}
+
+.container .cards .fav{
+    width: 4.25em !important;
+    height: 5.625em !important;
+    border: none;
+    margin-left: 30em ;
+    border-radius: 6px;
+    background-color: rgba(96, 96, 96, 0.06) !important;
+}
+
+.container .cards .fav img{
+    width: 1.5em !important;
+    height: 1.375em !important;
+    margin-top: 2.1875em  ;
+    margin-bottom: 2.0625em;
+    margin-left: 1.375em;
+}
+
+.container .cards div:hover{
+    opacity:0.5 ;
+    cursor: pointer;
+}
+
+.container .cards{
+    display: grid;
+    grid-template-columns:  1fr;
+    gap:1.875em;
+}
+
+.container .cards div ul{
+    align-items: center;
+}
+
+.container .cards div ul li:first-child{
+    color: #767676;
+    font-family: Roboto;
+    font-size: 11px;
+    margin-bottom: 0.4375rem;
+    padding-left: 1.4375rem;
+    background-image: url(../assets/icon_time.png);
+    background-size: 0.8125rem 0.8125rem;
+    background-repeat: no-repeat;
+}
+
+.container .cards div ul li:last-child{
+    color: #6b6b6b;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.pagination{
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 34.375em;
+    padding: 1.25rem 0.625em;
+    margin-left: 31.5em;
+    list-style: none;
+}
+
+.pagination a{
+    width: 2rem;
+    height: 2rem;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    margin: 0 8px;
+    font-size: 14px;
+    background-color: #fff;
+    color: rgba(0,0,0,0.65);
+    text-decoration: none;
+    padding: 0.625rem 0.75rem;
+}
+
+.pagination a:hover{
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.active-page a{
+    background-color: #1890ff;
+    color: #fff;
+}
+
+
+@media(min-width:768px){
+    .container .cards{
+        grid-template-columns: repeat(2, 1fr);
+        gap:40px;
+    }
+}
+
+
+
